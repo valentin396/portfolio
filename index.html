@@ -128,13 +128,13 @@
   }
   .photo-frame{
     width:280px;height:280px;border-radius:50%;
-    padding:6px;
-    background:linear-gradient(140deg, rgba(96,165,250,.55), rgba(255,255,255,.08));
-    box-shadow:0 30px 60px -20px rgba(0,0,0,.6);
+    padding:7px;
+    background:#fff;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.15);
   }
   .photo-frame img{
-    width:100%;height:100%;object-fit:cover;border-radius:50%;
-    border:5px solid var(--navy-900);
+    width:100%;height:100%;object-fit:cover;object-position:50% 22%;border-radius:50%;
+    border:2px solid #fff;
   }
   .hero-tagline{
     margin-top:22px;text-align:center;color:rgba(255,255,255,.85);
@@ -324,7 +324,7 @@
           <a href="https://github.com/valentin396" aria-label="GitHub" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.4 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.4-1.5 3.4-1.2 3.4-1.2.7 1.7.2 3 .1 3.3.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3Z"/></svg>
           </a>
-          <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <a href="https://linkedin.com/in/dushimimana-valentin" aria-label="LinkedIn" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05 4.02 0 4.76 2.6 4.76 6V21H18v-5.3c0-1.27-.02-2.9-1.77-2.9-1.78 0-2.05 1.38-2.05 2.8V21H10.4V9Z"/></svg>
           </a>
           <a href="mailto:valentindushimimana@gmail.com" aria-label="Email">
@@ -341,7 +341,7 @@
     <section class="section-pad" id="projects">
       <div class="head-row">
         <h2><span class="ico">▦</span>Featured Projects</h2>
-        <a href="#" class="view-all">View All Projects →</a>
+        <a href="https://github.com/valentin396?tab=repositories" class="view-all" target="_blank" rel="noopener">View All Projects →</a>
       </div>
       <p class="section-sub">Here are some of the projects I've worked on. Each project represents a step in my journey to becoming a better <span class="hl">developer and problem solver</span>.</p>
       <div class="proj-grid">
@@ -349,10 +349,60 @@
         <div class="proj-card">
           <div class="proj-thumb" style="background:linear-gradient(135deg,#1e3a8a,#3b82f6);">MIZERO</div>
           <div class="proj-body">
-            <div class="proj-tags"><span class="tag">Full Stack</span><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
-            <h3>Mizero — Lost &amp; Found Rwanda</h3>
-            <p>An AI-powered conversational platform that helps people find lost items across Rwanda using matching and location tracking.</p>
-            <a href="#" class="proj-link">View Project →</a>
+            <div class="proj-tags"><span class="tag">JavaScript</span><span class="tag">Full Stack</span><span class="tag">AI</span></div>
+            <h3>MIZERO — AI Full Stack Project</h3>
+            <p>An AI-powered conversational lost-and-found and matching platform for Rwanda, with a chatbot-driven interface for reporting and finding lost items.</p>
+            <a href="https://github.com/valentin396/MIZERO-AI-FULL-STACK-PROJECT" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#7c3aed,#c026d3);">NLP Classifier</div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="tag">Python</span><span class="tag">NLP</span><span class="tag">TF-IDF</span></div>
+            <h3>NLP Item Classifier for MIZERO</h3>
+            <p>NLP intent classifier for MIZERO's chatbot — uses TF-IDF and Logistic Regression to detect user intents like report, search, confirm and status checks from chat messages.</p>
+            <a href="https://github.com/valentin396/NLP-ITEM-CLASSIFIER-FOR-MIZERO-LOST-ITEM-PROJECT" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#0f766e,#14b8a6);">Image Classifier</div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="tag">Python</span><span class="tag">MobileNetV2</span><span class="tag">Transfer Learning</span></div>
+            <h3>Lost-Item Image Classifier</h3>
+            <p>Recognizes lost-and-found items (bottle, umbrella, calculator, charger, key) from photos using transfer learning on MobileNetV2 — trained on 3,500+ images, ~98% validation accuracy.</p>
+            <a href="https://github.com/valentin396/LOST-ITEM-CLASSIFIER-MACHINE-LEARNING-PROJECT" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#9333ea,#4f46e5);">Credit Risk XAI</div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="tag">Python</span><span class="tag">SHAP</span><span class="tag">Explainable AI</span></div>
+            <h3>Explainable Credit Risk Classifier</h3>
+            <p>Predicts good/bad credit risk with a Random Forest, then explains individual predictions using global and local SHAP visualizations.</p>
+            <a href="https://github.com/valentin396/explainable_credit_risk" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#b91c1c,#f97316);">Fraud Detection</div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="tag">Python</span><span class="tag">Random Forest</span><span class="tag">Fraud Detection</span></div>
+            <h3>Mobile Money Fraud Detection</h3>
+            <p>Fraud detection for mobile money transactions using a Random Forest classifier on a realistic synthetic dataset — detects account-draining fraud patterns with 88% recall.</p>
+            <a href="https://github.com/valentin396/mobile-money-fraud-detection-" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#166534,#22c55e);">Blockchain Registry</div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="tag">Solidity</span><span class="tag">Blockchain</span><span class="tag">Smart Contracts</span></div>
+            <h3>Blockchain Asset Registry</h3>
+            <p>A Solidity smart contract for a blockchain-based asset/land registry — enables tamper-proof registration, ownership transfer and independent verification without a central authority.</p>
+            <a href="https://github.com/valentin396/blockchain-asset-registry" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
         </div>
 
@@ -360,29 +410,19 @@
           <div class="proj-thumb" style="background:linear-gradient(135deg,#7c3aed,#c026d3);">Computer Vision</div>
           <div class="proj-body">
             <div class="proj-tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Image Processing</span></div>
-            <h3>Computer Vision Project</h3>
-            <p>Image processing pipeline using thresholding, Sobel, Laplacian, Canny, morphology, clustering and graph segmentation.</p>
-            <a href="#" class="proj-link">View Project →</a>
-          </div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-thumb" style="background:linear-gradient(135deg,#0f766e,#14b8a6);">Tourism System</div>
-          <div class="proj-body">
-            <div class="proj-tags"><span class="tag">Python</span><span class="tag">SQL Server</span><span class="tag">Tkinter</span></div>
-            <h3>Tourism Management System</h3>
-            <p>A database-driven GUI for managing tourism services with 6–8 ERD entities, CRUD operations and multiple pages.</p>
-            <a href="#" class="proj-link">View Project →</a>
+            <h3>Computer Vision &amp; Image Processing</h3>
+            <p>Multiple computer vision techniques on the classic Lenna test image using Python, OpenCV, NumPy, Matplotlib and Scikit-image — thresholding, Sobel, Canny, morphology and more.</p>
+            <a href="https://github.com/valentin396/Computer-Vision-Image-Processing-Project-using-Python-OpenCV" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
         </div>
 
         <div class="proj-card">
           <div class="proj-thumb" style="background:linear-gradient(135deg,#334155,#64748b);">Parking System</div>
           <div class="proj-body">
-            <div class="proj-tags"><span class="tag">Python</span><span class="tag">Tkinter</span><span class="tag">SQLite</span></div>
-            <h3>Parking Management System</h3>
-            <p>A desktop application to manage parking slots with a database backend.</p>
-            <a href="#" class="proj-link">View Project →</a>
+            <div class="proj-tags"><span class="tag">Python</span><span class="tag">Spyder</span><span class="tag">GUI</span></div>
+            <h3>Car Parking Management System</h3>
+            <p>A school car parking management system built with Python to manage vehicle entry, exit, parking slots and records through a GUI and database — my first-year project.</p>
+            <a href="https://github.com/valentin396/MY-FIRST-YEAR-CAR-PARKING-SYSTEM-PROJECT-DEVELOPED-USING-SPYDER" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
         </div>
 
@@ -390,19 +430,39 @@
           <div class="proj-thumb" style="background:linear-gradient(135deg,#ea580c,#f59e0b);">Unity Game</div>
           <div class="proj-body">
             <div class="proj-tags"><span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Android</span></div>
-            <h3>Unity Mobile Game</h3>
-            <p>A touch-only mobile game with 5+ levels, built and tuned for Samsung Note10+.</p>
-            <a href="#" class="proj-link">View Project →</a>
+            <h3>DUSHIPLAT Adventure — Unity Game</h3>
+            <p>A touch-based 2D mobile game developed with Unity and C#, featuring 5+ levels, interactive gameplay, level progression and Android mobile controls.</p>
+            <a href="https://github.com/valentin396/DUSHIPLAT-ADVENTURE-UNITY-GAME-PROJECT" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
         </div>
 
         <div class="proj-card">
-          <div class="proj-thumb" style="background:linear-gradient(135deg,#b91c1c,#f87171);">Fire-Fighting Car</div>
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#0e7490,#06b6d4);">XAI Research</div>
           <div class="proj-body">
-            <div class="proj-tags"><span class="tag">Arduino</span><span class="tag">C++</span><span class="tag">Sensors</span></div>
-            <h3>Arduino Fire-Fighting Car</h3>
-            <p>A robot car that detects fire using IR sensors and an L298 motor driver.</p>
-            <a href="#" class="proj-link">View Project →</a>
+            <div class="proj-tags"><span class="tag">Research</span><span class="tag">XAI</span></div>
+            <h3>XAI for Non-Expert Users</h3>
+            <p>Research on Explainable AI (XAI) and its role in making machine learning systems more transparent and understandable for non-expert users.</p>
+            <a href="https://github.com/valentin396/XAI-FOR-NON---EXPERT-USERS" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#1e293b,#475569);">Department Site</div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Web Design</span></div>
+            <h3>Department Website Design</h3>
+            <p>A web application providing information about a college/university department — courses, faculty, announcements and contact details.</p>
+            <a href="https://github.com/valentin396/DEPARTMENT-WEBSITE-DESIGN-WITH-CODES-AND-VISUAL" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#4338ca,#6366f1);">Data Science Labs</div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="tag">Python</span><span class="tag">Jupyter</span><span class="tag">Data Science</span></div>
+            <h3>Data Science Labs 2026</h3>
+            <p>Coursework and lab exercises in data science — data cleaning, analysis and modeling using Jupyter notebooks.</p>
+            <a href="https://github.com/valentin396/data-science-labs-2026" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
           </div>
         </div>
 
@@ -458,11 +518,6 @@
       <h2><span class="ico">💼</span>Experience</h2>
       <div class="timeline">
         <div class="tl-item">
-          <b>Kitchen Assistant / Dishwashing</b>
-          <div class="role">Younggeumhoe Restaurant, Sokcho</div>
-          <div class="place">2023 – 2024 (1 year 8 months)</div>
-        </div>
-        <div class="tl-item">
           <b>Student — Currently</b>
           <div class="role">Kyungdong University</div>
         </div>
@@ -493,7 +548,6 @@
       <h2><span class="ico">🏆</span>Achievements &amp; Goals</h2>
       <ul class="goal-list">
         <li>Graduated from Master Dei High School (Rwanda)</li>
-        <li>Targeting Kumoh National Institute of Technology (Fall 2027) for a Master's degree</li>
         <li>Building real-world AI and full-stack projects</li>
         <li>Contributing to Rwanda's digital transformation</li>
       </ul>
@@ -504,7 +558,7 @@
       <p class="about-p" style="margin-bottom:14px;">Let's work together! Feel free to reach out.</p>
       <div class="contact-row">
         <a class="contact-btn" href="mailto:valentindushimimana@gmail.com"><span class="ico">✉️</span>Email</a>
-        <a class="contact-btn" href="https://linkedin.com" target="_blank" rel="noopener"><span class="ico">in</span>LinkedIn</a>
+        <a class="contact-btn" href="https://linkedin.com/in/dushimimana-valentin" target="_blank" rel="noopener"><span class="ico">in</span>LinkedIn</a>
         <a class="contact-btn" href="https://github.com/valentin396" target="_blank" rel="noopener"><span class="ico">⌥</span>GitHub</a>
       </div>
     </div>
