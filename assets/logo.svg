@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#132540"/>
+      <stop offset="100%" stop-color="#0b1526"/>
+    </linearGradient>
+    <linearGradient id="letters" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="url(#bg)" stroke="#3b82f6" stroke-width="2.5" stroke-opacity="0.55"/>
+  <text x="100" y="132" font-family="Helvetica, Arial, sans-serif" font-weight="700"
+        font-size="92" text-anchor="middle" fill="url(#letters)" letter-spacing="-4">DV</text>
+</svg>
