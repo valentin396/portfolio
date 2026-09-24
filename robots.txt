@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dushimimanavalentin.com/sitemap.xml
+Sitemap: https://www.dushimimanavalentin.com/sitemap.xml
